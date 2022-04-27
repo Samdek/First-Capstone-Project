@@ -1,0 +1,412 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*General Styles*/
+body {
+    background-color: #181f2a;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+
+/*Header*/
+.header_logo {
+    margin: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+/*Navigation Bar*/
+.nav_item {
+    display: flex;
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+}
+
+.nav_list {
+    margin: 0 1em;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+
+/*Introduction*/
+.intro {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_title-intro {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-weight: 700;
+   
+}
+
+.section_subtitle-intro {
+    margin-bottom: 2em;
+}
+
+.intro_link {
+    color: #ffffff;
+    background: linear-gradient(to right, #65e2d9, #339ecc);
+    padding: 0.7em 5em;
+    border-radius: 200px;
+    text-decoration: none;
+    margin-top: 2em;
+}
+
+
+/*Our Services*/
+.our_services {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.services {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5em;
+    max-width: 1200px;
+}
+
+.service_img {
+    margin-bottom: 1em;
+}
+
+.service +.service {
+    padding-left: 20px;
+}
+
+
+/*Information*/
+.information {
+    display: flex;
+    max-width: 1400px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.information_details {
+    margin-top: 8em;
+}
+
+.information_link {
+    grid-area: link;
+    color: #65e2d9;
+    text-decoration: none;
+}
+
+.information_link:hover {
+    color: white;
+}
+
+hr {
+    width: 10em;
+    margin-left: 0;
+}
+
+
+/*Testimony*/
+.customer_tesimonies {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonies {
+    display: flex;
+    justify-content: center;
+}
+
+.testimony_img {
+    margin-top: -10em;
+    margin-left: -10px;
+    margin-bottom: 1.5em;
+}
+
+.testimony {
+    background-color: #202a3c;
+    max-width: 350px;
+    max-height: 200px;
+    margin: 0 2em;
+    padding: 10px;
+}
+
+.customer_words {
+    margin-top: 2em;
+}
+
+.customer_img {
+    max-width: 40px;
+    border-radius:40px;
+}
+
+.customer_details {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 10px;
+    margin: 0;
+}
+
+.customer_name {
+    margin: 0;
+}
+
+.customer_title {
+    margin-top: 0;
+}
+
+
+/*Little Offer / Get started*/
+.offer {
+    background-color: #1c2431;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 270px;
+    padding: 5em;
+    margin-bottom: -9em;
+    z-index: 6;
+    position: relative;
+}
+
+.section_title-offer {
+    margin: -10px;
+    padding-bottom: 1em;
+}
+
+input {
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    font-size: 10px;
+}
+
+.after_input {
+    color: rgb(172, 0, 0);
+    font-weight: 900;
+    margin-top: 0.3em;
+    text-align: left;
+    padding-left: 3em;
+    padding-bottom: 10em;
+}
+
+.offer_link {
+    color: #ffffff;
+    background: linear-gradient(to right, #65e2d9, #339ecc);
+    width: 250px;
+    padding: 0.7em 0;
+    margin-left: 15px;
+    border-radius: 200px;
+    text-decoration: none;
+}
+
+.register {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*footer*/
+footer {
+    background-color: #0b1523;
+    padding-top: 250px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_logo {
+    margin: -10em 0 1em 2em;
+}
+
+.contact_icon {
+    margin: 0;
+    padding-right: 6px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    padding: 0.3em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social_item {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.social_item:hover {
+    color: #65e2d9;
+}
+
+.footer i {
+    font-size: 14px;
+    border: 0.2px solid #ffffffd5;
+    border-radius: 20px;
+    padding: 0.3em;
+    text-align: center;
+}
+
+
+
+@media (min-width: 350px) and (max-width: 1440px) {
+    /*General Styles*/
+    body {
+        font-size: 9.5px;
+        max-width: 400px;
+        margin: 0 auto;    
+    }
+
+    section {
+        padding: 1em 0;
+    }
+
+    /*Header*/
+    .header {
+        max-width: 300px;
+    }
+
+    
+    .header_logo {
+        max-width :60px;
+    }
+
+
+    /*Introduction*/
+   .intro {
+        max-width: 340px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro_link {
+        padding: 0.4em 3em;
+    }
+
+    /*Our Services*/
+    .services {
+        display: block;
+        margin: 0 auto;;
+        max-width: 300px;
+    }
+
+
+    .service {
+        margin: 10em 0;
+    }
+
+
+    /*Information*/
+    .information {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+
+
+    /*Testimony*/
+    .testimonies {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .testimony {
+        margin: 0 auto;
+        margin: 5em 1em;
+    }
+
+
+    /*Little Offer*/
+    .offer {
+        max-width: 250px;
+        border-radius: 10px;
+        padding: 5em;
+        margin-bottom: -13em;
+        max-height: 230px;
+    }
+
+    .register {
+        display: block;
+    }
+
+    input {
+        width: 150px;
+        height: 18px;
+        margin-bottom: 1.5em;
+    }
+
+    .after_input {
+        font-size: 6px;
+        margin-top: -4.8em;
+    }
+
+    .offer_link {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0.3em 3em;
+    }
+
+
+    /*Footer*/
+    .footer {
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .footer_logo {
+        margin-bottom: 3em;
+    }
+
+    .footer ul {
+        margin-bottom: 2em;
+    }
+
+    .social_icons {
+        margin: 0 auto;
+        max-width: 150px;
+        margin-top: 5em;
+        margin-bottom: -1em;
+    }
+}
